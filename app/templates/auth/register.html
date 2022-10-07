@@ -5,8 +5,10 @@
 {% endblock %}
 
 {% block content %}
+<!--action = ruta donde me voy a dirigir-->
   <form method="post" action="{{ url_for('auth.register')}}" class="px-4">
     <label for="username">Username</label>
+    <!--el comando required me permite hacer validaciones -->
     <input type="text" name="username" id="username" class="rounded-md mb-2" required>
     <label for="email address">Email Adress</label>
     <input type="email" name="email" id="email" class="rounded-md mb-2" required>

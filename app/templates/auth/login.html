@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+<!--action = ruta donde me voy a dirigir-->
   <form method="post" action="{{ url_for('auth.login')}}" class="px-4">
     <label for="username">Username</label>
     <input type="text" name="username" id="username" class="rounded-md mb-2" required>
